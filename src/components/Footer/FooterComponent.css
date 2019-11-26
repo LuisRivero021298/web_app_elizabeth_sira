@@ -1,0 +1,77 @@
+.footer{
+    background-color: #333;
+    color: #fff;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2,minmax(100px,1fr));
+    grid-template-areas: "title title"
+                         "btn btn"
+                         "redes redes"
+                         "derechos derechos"
+}
+
+.footer h3{
+    grid-area:title;
+    display:flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 25px;
+    font-size: 3em;
+}
+.footer .btn-up{
+    grid-area:btn;
+    color: #fff;
+}
+
+.redes{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+    grid-area:redes;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.redes ul{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.redes ul li{
+    margin: 0 15px;
+    display: inline-block;
+}
+.redes article:not(.redes){
+    border-right: 2px solid #444;
+}
+
+/*.................
+      Iconos
+................*/
+
+.call-icon, 
+.face-icon,
+.ig-icon{
+    color: #eeeedd;
+    font-size: 30px;
+}
+
+.call-icon:hover, 
+.face-icon:hover,
+.ig-icon:hover{
+    color: #fff;
+}
+
+.footer .derechos{
+    grid-area:derechos;
+    display:flex;
+    justify-content: center;
+    background-color: #222;
+    color: #666;
+}
+.footer .derechos p{
+    margin:auto;
+}
+

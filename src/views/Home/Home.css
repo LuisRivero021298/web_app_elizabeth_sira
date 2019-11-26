@@ -1,0 +1,158 @@
+.main{
+  width: 100%;
+	display: grid;
+	grid-template-columns: minmax(375px, 1fr);
+	grid-template-rows: repeat(5, 700px);
+	grid-template-areas:"main-slider"
+            "g-content"
+            "about"
+            "portfolio"
+            "contact";
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/**************** 
+  transiciones
+****************/ 
+.slide-fade-enter-active {
+  	transition: all .5s ease-in;
+}
+.slide-fade-leave-active {
+  	transition: all .3s cubic-bezier(.17, .67, .83, .67);
+}
+.slide-fade-enter, .slide-fade-leave-to{
+	transform: translateY(800px);
+	opacity: 0;
+}
+
+/***/
+#services{
+	width: 100%;
+	grid-area: g-content;
+	padding: 0;
+}
+
+.container-categories{
+	width: 75%;
+  margin: auto;
+  margin-top: 70px;
+	padding: 0;
+	display: grid;
+	grid-gap: 50px;
+  grid-template-columns: minmax(375px, 1fr);
+  grid-template-rows: 80px 400px;
+	grid-template-areas: "title"
+						           "categories";
+					
+}
+
+.categories{
+	padding: 0 !important;
+	grid-area: categories;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(2, 1fr);
+	margin: 0;
+}
+
+
+.title{
+	grid-area: title;
+  margin: 10px auto;
+  width: 100%;
+  height: 100%;
+}
+
+.title-hide{
+  display: none;
+}
+.categories li{
+	list-style: none;
+}
+.categories .col-sm{
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}  
+
+#about{
+  grid-area: about;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: .1px solid #eeefff;
+}
+
+.container-about{
+  width: 75%;
+  margin: auto;
+  margin-top: 70px;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-rows: 80px 1fr;
+  grid-template-areas: "title"
+                       "about-content";
+}
+#portfolio{
+  grid-area: portfolio;
+  padding: 0 !important;
+}
+
+.portfolio-container{
+    width: 100%;
+    background-color: #fff;
+}
+
+#contact{
+  grid-area: contact;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-contact{
+  width: 50%;
+  margin: auto;
+  display: grid;
+  grid-gap: 80px;
+  margin-top: 70px;
+  grid-template-rows: 80px 1fr;
+  grid-template-areas: "title"
+                       "contact-content";
+}
+
+
+

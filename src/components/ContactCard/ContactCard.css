@@ -1,0 +1,69 @@
+.form-contact{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 50px 50px 50px;
+    grid-auto-columns: 1fr 2fr;
+    grid-template-areas: "text1 msg"
+                         "text2 msg"
+                         "text3 msg"
+                         "btn btn";
+}
+
+
+.text-contact{
+    border: .2px solid #ccc !important;
+    margin: 0 !important;
+    height: 100%;
+    border-radius: 2px;
+}
+
+.text-contact:focus{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+    border: .2px solid #222 !important;
+    
+}
+
+#name{
+    grid-area: text1;
+}
+#email{
+    grid-area: text2;
+}
+#phone{
+    grid-area: text3;
+}
+#msg{
+    grid-area: msg;
+    resize: none;
+    margin-left: 15px;
+    border: 1px solid #ccc !important;
+    height: 96.5%;
+    border-radius: 2px;
+}
+
+#msg:focus{
+    outline:0px !important;
+    -webkit-appearance:none;
+    border: 1px solid #222 !important;
+}
+#btn-contact{
+    margin: auto;
+    height: 35px;
+    background-color: #888;
+    border: .2px solid #888;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 20%;
+    grid-area: btn;
+    transition: background .3s ease-in;
+
+}
+#btn-contact:hover{
+    background-color: #444;
+    border: .2px solid #444;
+}

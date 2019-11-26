@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Cardo:400i&display=swap');
+
+.nav-wrapper{
+    background-color: #000;
+}
+
+nav{
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 30;
+    box-shadow: none !important;
+}
+
+nav ul a:hover{
+    background-color: none;
+}
+#nav-mobile{
+    display: block;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brand-logo, #nav-mobile li a{
+    text-decoration: none;
+    color: #c1c1c1 !important;
+    transition: color 0.4s ease;
+    margin: 0 15px;
+}
+
+#nav-mobile li a {
+    font-family: 'Cardo', serif !important;
+    font-size: 17px;
+}
+
+.brand-logo:hover, #nav-mobile li a:hover{
+    text-decoration: none;
+    color: #fff !important;
+}
+
+nav .brand-logo {
+    position:unset;
+    float: left !important;
+    margin-left: 35px;
+}
+
+/*responsive*/
+@media (max-width: 375px){
+    nav{width: 375px;}
+}
