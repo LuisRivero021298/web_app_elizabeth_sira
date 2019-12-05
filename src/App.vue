@@ -5,12 +5,14 @@
 		</div>
 		<router-view />
 		<FooterComponent/>
+		<ScrollUp />
 	</div>
 </template>
 
 <script>
 import Navbar from './components/Navbar/Navbar.vue';
 import FooterComponent from './components/Footer/FooterComponent.vue';
+import ScrollUp from './components/ScrollUp/ScrollUp.vue';
 import M from 'materialize-css';
 
 import { mapState } from 'vuex';
@@ -19,12 +21,13 @@ import { mapState } from 'vuex';
 		name: 'App',
 		data(){
 			return{
-				
+				load: false
 			}
 		},
 		components: {
 			Navbar,
-			FooterComponent
+			FooterComponent,
+			ScrollUp
 		},
 		computed: {
 			...mapState(['enableButton'])
@@ -39,6 +42,7 @@ import { mapState } from 'vuex';
 			}
 		},
 		mounted(){
+			
 			document.addEventListener('DOMContentLoaded', this.scrollspy());
 		},
 		updated(){
@@ -49,6 +53,7 @@ import { mapState } from 'vuex';
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Petit+Formal+Script&display=swap');
 *{
 	font-family: 'Open Sans Condensed', sans-serif !important;
 }

@@ -3,9 +3,9 @@
         <div class="title-principal">
             <h1>{{title}}</h1>
             <p>{{description}}</p>
+            <a v-if="section === 'home'" class="btn-action" href="#contact"> Contáctame </a>
         </div>
         <div class="parallax-container">
-            <Preloader v-if="loadImg == false"></Preloader>
             <div v-if="imageToParallax" class="parallax">
                 <img :src="urlBase+'images/'+imageToParallax.url_image">
             </div>

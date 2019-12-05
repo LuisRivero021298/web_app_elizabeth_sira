@@ -12,29 +12,32 @@ export default {
         }
     },
     computed:{
-        ...mapState(['urlBase'])
+        ...mapState(['urlBase']),
+        urlSend(){
+            return this.urlBase+'/api/contact';
+        }
     },
     methods:{
-        sendMessage(){
-            let url = `${this.urlBase}api/contact`;
+        createMessage(){
             let data = new FormData();
             data.append('name_client',this.message.name_client);
             data.append('email_client',this.message.email_client);
             data.append('phone_client',this.message.phone_client);
             data.append('msg_client',this.message.msg_client);
-
+            return data;
+        },
+        sendMessage(){
+            const data = this.createMessage();
             let headers = new Headers();
             headers.append('Accept', 'application/json');
-            //console.log(data.append);
-            fetch(url, {
+
+            fetch(this.urlSend, {
                 method: 'POST',
                 body: data,
                 headers
             })
             .then(response => response.json())
-            .then(json => {
-                console.log(json);
-            })
+            .then(json => {console.log(json);})
             .catch(error => console.log(error));
         }
     }

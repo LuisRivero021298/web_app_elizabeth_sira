@@ -24,19 +24,23 @@ nav ul a:hover{
 }
 .brand-logo, #nav-mobile li a{
     text-decoration: none;
-    color: #c1c1c1 !important;
+    color: #c1c1c1;
     transition: color 0.4s ease;
     margin: 0 15px;
 }
 
 #nav-mobile li a {
-    font-family: 'Cardo', serif !important;
+    font-family: 'Petit Formal Script', cursive !important;
     font-size: 17px;
+    border-left: 2px solid #000;
+    transition: all .4s ease;
 }
 
 .brand-logo:hover, #nav-mobile li a:hover{
     text-decoration: none;
-    color: #fff !important;
+    color: #fff;
+    border-left: 2px solid #5C5C5C !important;
+    padding-left: 16px !important;
 }
 
 nav .brand-logo {
@@ -44,7 +48,10 @@ nav .brand-logo {
     float: left !important;
     margin-left: 35px;
 }
-
+a.active, #nav-mobile li a.active:hover{
+    border-left: 2px solid #A76CC7 !important;
+    padding-left: 16px !important;
+}
 /*responsive*/
 @media (max-width: 375px){
     nav{width: 375px;}

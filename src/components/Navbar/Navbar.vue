@@ -2,7 +2,7 @@
     <nav>
         <div class="nav-wrapper">
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul id="nav-mobile" class="hide-on-med-and-down">
+            <ul id="nav-mobile" class="hide-on-med-and-down table-of-contents">
                 <div>
                     <li v-if="route != '/'"><router-link to="/">Home</router-link></li>
                     <li v-else><a href="#home">Home</a></li>

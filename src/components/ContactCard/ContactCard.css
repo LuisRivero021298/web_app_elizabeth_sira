@@ -13,7 +13,7 @@
 
 
 .text-contact{
-    border: .2px solid #ccc !important;
+    border: .2px solid #E1E1E1 !important;
     margin: 0 !important;
     height: 100%;
     border-radius: 2px;
@@ -23,7 +23,7 @@
     outline:0px !important;
     -webkit-appearance:none;
     box-shadow: none !important;
-    border: .2px solid #222 !important;
+    border: .2px solid #BF9BD3 !important;
     
 }
 
@@ -40,7 +40,7 @@
     grid-area: msg;
     resize: none;
     margin-left: 15px;
-    border: 1px solid #ccc !important;
+    border: 1px solid #E1E1E1 !important;
     height: 96.5%;
     border-radius: 2px;
 }
@@ -48,22 +48,23 @@
 #msg:focus{
     outline:0px !important;
     -webkit-appearance:none;
-    border: 1px solid #222 !important;
+    border: 1px solid #BF9BD3 !important;
 }
 #btn-contact{
     margin: auto;
     height: 35px;
-    background-color: #888;
-    border: .2px solid #888;
-    color: #fff;
+    background-color: #BF9BD3;
+    border: .2px solid #BF9BD3;
+    color: #eee;
     border-radius: 2px;
     cursor: pointer;
     width: 20%;
     grid-area: btn;
-    transition: background .3s ease-in;
+    transition: all .3s ease-in;
 
 }
 #btn-contact:hover{
-    background-color: #444;
-    border: .2px solid #444;
+    background-color: #8042A2;
+    border: .2px solid #8042A2;
+    color: #fff;
 }

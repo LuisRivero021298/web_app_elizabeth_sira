@@ -68,7 +68,6 @@ import {mapState} from 'vuex';
 	}
 	.service{
 		margin: 0;
-		max-width: 22em;
 	}
 	.service img{
 		height: 250px;

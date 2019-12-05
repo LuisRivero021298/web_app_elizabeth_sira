@@ -102,38 +102,21 @@
     width: 40% !important;
   }
 
-}
 
-/*@media (max-width: 414px){
-  .container-categories, .container-about{
-    margin: 0 !important;
-    margin-top: 30px !important;
-    grid-gap: 15px !important;
+  /*Servicios*/
+  .service-content {
+    grid-template-columns: 200px 1fr !important;
+  }
+  .container-services > ul{
     width: 100% !important;
-    height: 770px !important;
-    grid-template-rows: 80px 500px !important;
   }
-  .categories{
-    width: 95% !important;
-    margin: auto !important;
-    height: 670px !important;
-    grid-template-rows: 310px 310px !important;
+  .pagination-wrapper {
+    width: 100% !important; 
   }
-  .category, .card, .card-image{
-    height: 100% !important;
+  .service{
+    width: 100% !important;
   }
-  
-  .about-content p {
-    width: 90% !important;
-    font-size: 18px !important;
-    margin: auto !important;
-  }
-
-  .title-hide{
-    display:block !important;
-  }
-
-}*/
+}
 
 @media (max-width: 414px){
   .main{
@@ -227,6 +210,38 @@
     margin-top: 30px !important;
     grid-gap: 30px !important;
   }
+
+  /* Servicios */
+  .container-services{
+    width: 90% !important;
+  }
+  .service-content {
+    grid-gap: 10px !important;
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .image-card {
+    padding: 5px !important;
+  }
+
+  .content-card h1{
+    font-size: 25px !important;
+  }
+  .content-card span{
+    font-size: 20px !important;
+  }
+  .content-card span, .content-card p{
+    margin: 5px 0 !important;
+  }
+}
+
+@media (max-width: 375px){
+  .container-services{
+    width: 360px !important;
+    margin: 30px 7.5px !important;
+  }
+  .content-card p{
+    width: 168px !important;
+  }
 }
 
 @media (max-width: 360px){
@@ -238,3 +253,19 @@
     width: 100% !important;
   }
 } 
+
+@media (max-width: 320px){
+  .nav-wrapper{
+    width: 320px !important;
+  }
+  .main #home, .main #services, .main #about, .main #portfolio, .main #contact{
+    width: 320px !important;
+  }
+  .container-categories .title,.container-categories .categories{
+    width: 320px !important;
+    margin: 10px 0 !important;
+  }  
+  
+  .main-slider{
+  }
+}

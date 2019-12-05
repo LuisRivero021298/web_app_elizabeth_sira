@@ -1,5 +1,6 @@
 <template>
 <div class="services">
+	<Preloader v-if="!load"></Preloader>
 	<Parallax 
 		class="main-slider"
 		:title="categoryName + ' Services' "
@@ -31,6 +32,7 @@ import TitleComponent from "@/components/TitleComponent/TitleComponent.vue";
 import ServicesCard from "@/components/ServicesCard/ServicesCard.vue";
 import Parallax from "@/components/Parallax/Parallax.vue";
 import Pagination from '@/components/Pagination/Pagination.vue';
+import Preloader from '@/components/Preloader/Preloader.vue';
 import { mapState, mapActions, mapMutations, mapGetters } from "vuex";
 
 export default{
@@ -39,7 +41,8 @@ export default{
   		return {
   			currentPage:0,
   			pageSize: 3,
-  			visibleServices: []
+  			visibleServices: [],
+  			load: false
   		}
   	},
   	created() {
@@ -49,11 +52,22 @@ export default{
   	beforeMount() {
   		this.updateVisibleServices();
   	},
+	mounted(){
+		this.$nextTick(function () {
+		    window.addEventListener('load', () => {
+				this.load = true;
+			});
+		});
+	},
+	updated(){
+		this.load = true;
+	},
   	components: {
 		TitleComponent,
 		ServicesCard,
 		Parallax,
-		Pagination
+		Pagination,
+		Preloader
 	},
 	computed: {
 		...mapState(["urlBase", "next", "prev", "route"]),
@@ -85,7 +99,7 @@ export default{
   	methods: {
     	...mapMutations(["addAll",'changeRoute']),
     	loadServices() {
-      		fetch(`${this.urlBase}service`)
+      		fetch(`${this.urlBase}/api/service`)
         	.then(response => {
           		return response.json();
         	})

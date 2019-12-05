@@ -12,10 +12,6 @@
     height: 100%;
 }
 
-.category:hover img{
-    -webkit-opacity: .6;
-    opacity: .6;
-}
 .category img{
     height: 350px;
     transition: all .6s;
@@ -42,4 +38,18 @@
     font-size: 30px;
     color: #000 !important;
     font-weight: bold;
+}
+.card{
+    margin: 0;
+}
+.card .card-image img, .card {
+    border-radius: 0 !important;
+}
+.col-sm, 
+.category, .row, .col,
+.card, .card-image, .card-image img{
+    box-shadow: 0 0 0 #fff !important;
+}
+.card:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3) !important;   
 }
