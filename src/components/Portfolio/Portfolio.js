@@ -18,7 +18,7 @@ export default{
     methods:{
         ...mapMutations(['addAll']),
         loadWorks(){
-            fetch(`${this.urlBase}/api/work`)
+            fetch(`${this.urlBase}api/work`)
             .then(response => { return response.json(); })
             .then(json => {
                 this.setWork(json.data);

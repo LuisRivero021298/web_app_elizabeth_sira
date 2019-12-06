@@ -30,7 +30,7 @@ export default{
 	methods: {
 		...mapMutations(['addAll','changeRoute']),
 		loadCategories(){
-            fetch(`${this.urlBase}/api/category`)
+            fetch(`${this.urlBase}api/category`)
             .then(response => { return response.json(); })
             .then(json => {
                 this.setCategories(json.data);

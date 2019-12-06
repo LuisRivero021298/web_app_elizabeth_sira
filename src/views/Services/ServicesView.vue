@@ -99,7 +99,7 @@ export default{
   	methods: {
     	...mapMutations(["addAll",'changeRoute']),
     	loadServices() {
-      		fetch(`${this.urlBase}/api/service`)
+      		fetch(`${this.urlBase}api/service`)
         	.then(response => {
           		return response.json();
         	})

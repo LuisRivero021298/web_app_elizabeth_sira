@@ -14,7 +14,7 @@ export default {
     computed:{
         ...mapState(['urlBase']),
         urlSend(){
-            return this.urlBase+'/api/contact';
+            return this.urlBase+'api/contact';
         }
     },
     methods:{

@@ -24,7 +24,7 @@ export default{
     },
     methods: {
 		loadImages(){
-			fetch(`${this.urlBase}parallax/${this.section}`)
+			fetch(`${this.urlBase}api/parallax/${this.section}`)
 			.then( (response)=> {
 				return response.json();
 			})
