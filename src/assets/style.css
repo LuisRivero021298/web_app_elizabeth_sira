@@ -128,6 +128,21 @@
               "portfolio"
               "contact";
   }
+  .title-principal {
+    top:235px !important;
+    left: 0px !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .title-principal h1{
+    width: 98% !important;
+    margin: auto !important;
+    font-size: 5em !important;
+  }
+
+  .title-principal a{
+    margin: auto;
+  }
 
   .container-categories, .container-about{
     margin: 0 !important;
@@ -235,12 +250,31 @@
 }
 
 @media (max-width: 375px){
+  .main {
+    width: 378px !important;
+    grid-template-rows: 600px 650px 700px 850px 500px !important;
+  }
+  .title-principal h1{
+    font-size: 4.5em !important;
+  }
+  .footer{
+    width: 378px !important;
+  }
   .container-services{
     width: 360px !important;
     margin: 30px 7.5px !important;
   }
   .content-card p{
     width: 168px !important;
+  }
+  .about-image {
+    height: 285px !important;
+  }
+  nav {
+    width: 375px !important;
+  }
+  .nav-wrapper {
+    width: 375px !important;
   }
 }
 

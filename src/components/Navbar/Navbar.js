@@ -13,10 +13,8 @@ export default{
     methods:{
         ...mapMutations(['changeRoute']),
         sidenav() {
-            document.addEventListener('DOMContentLoaded', function() {
-                var elems = document.querySelectorAll('.sidenav');
-                var instances = M.Sidenav.init(elems);
-            });
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
         },
         
         prueba(e){
@@ -25,7 +23,8 @@ export default{
     },
     mounted() {
         this.changeRoute(this.$route.path);
-        this.sidenav();
+        M.AutoInit();
+        
     },
     updated() {
         

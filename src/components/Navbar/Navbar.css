@@ -48,11 +48,26 @@ nav .brand-logo {
     float: left !important;
     margin-left: 35px;
 }
-a.active, #nav-mobile li a.active:hover{
+#nav-mobile a.active, #nav-mobile li a.active:hover{
     border-left: 2px solid #A76CC7 !important;
     padding-left: 16px !important;
 }
-/*responsive*/
-@media (max-width: 375px){
-    nav{width: 375px;}
+
+#mobile-demo li{
+    height: 100px !important;
+}
+#mobile-demo a{
+    font-family: 'Petit Formal Script', cursive !important;
+    font-size: 20px !important;
+    color: #999;
+    height: 100% !important;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mobile-demo a.active{
+    background-color: #f6f6f6 !important;
+    color: #444;
 }

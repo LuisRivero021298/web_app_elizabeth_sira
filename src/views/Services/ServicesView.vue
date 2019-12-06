@@ -3,7 +3,6 @@
 	<Preloader v-if="!load"></Preloader>
 	<Parallax 
 		class="main-slider"
-		:title="categoryName + ' Services' "
 		section="services"/>
   	<div class="container-services">
 		<ul>

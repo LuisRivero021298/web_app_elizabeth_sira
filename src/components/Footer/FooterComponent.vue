@@ -1,19 +1,22 @@
 <template>
     <div class="footer">
         <h3>Elizabeth Sira</h3>
-        <a href="#home" class="btn-up">
-            <ion-icon size="large" name="ios-arrow-up"></ion-icon>
-        </a>
         <section class="redes">
             <ul>
                 <li>
-                    <a href="#"><ion-icon name="call" class="call-icon"></ion-icon></a>
+                    <a href="#" class="tooltipped" data-position="top" data-tooltip="+51 927 506 040">
+                        <ion-icon name="call" class="call-icon"></ion-icon>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><ion-icon name="logo-facebook" class="face-icon"></ion-icon></a>
+                    <a href="#" class="tooltipped" data-position="top" data-tooltip="@elizabethsiraa">
+                        <ion-icon name="logo-facebook" class="face-icon"></ion-icon>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><ion-icon name="logo-instagram" class="ig-icon"></ion-icon></a>
+                    <a href="#" class="tooltipped" data-position="top" data-tooltip="@elizabethsiraa">
+                        <ion-icon name="logo-instagram" class="ig-icon"></ion-icon>
+                    </a>
                 </li>
             </ul>
         </section>
