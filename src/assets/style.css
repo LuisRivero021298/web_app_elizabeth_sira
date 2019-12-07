@@ -34,6 +34,17 @@
   .main {
     grid-template-rows: 780px 800px 800px 1200px 650px !important;
   }
+  .logo-container{
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    position: absolute !important;
+    top:0 !important;
+    left: 0 !important;
+
+  }
   
   .container-categories{
     margin-top: 30px !important;
@@ -59,6 +70,9 @@
 
   .card-image{
     height: 325px !important;
+  }
+  .card-title{
+    display: none !important;
   }
 
   .about{

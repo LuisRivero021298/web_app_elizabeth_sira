@@ -18,7 +18,6 @@ export default{
         ...mapState(['urlBase']),
     },
     mounted(){
-        console.log(this.imageToParallax.length);
         M.AutoInit();
 		this.loadImages();
     },

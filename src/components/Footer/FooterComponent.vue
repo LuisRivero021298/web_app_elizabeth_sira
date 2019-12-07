@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-        <h3>Elizabeth Sira</h3>
+        <h3>Only Queen</h3>
         <section class="redes">
             <ul>
                 <li>

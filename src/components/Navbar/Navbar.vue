@@ -3,6 +3,7 @@
         <nav>
             <div class="nav-wrapper">
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><ion-icon name="menu"></ion-icon></a>
+                
                 <ul id="nav-mobile" class="hide-on-med-and-down table-of-contents">
                     <div>
                         <li v-if="route != '/'"><router-link to="/">Home</router-link></li>
@@ -13,8 +14,9 @@
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-
-                
+            </div>
+            <div class="logo-container">
+                <img src="/e-icon-nav.png" alt="logo" class="brand-logo">
             </div>
         </nav>
         <ul class="sidenav" id="mobile-demo"> <!-- Responsive!-->

@@ -71,3 +71,16 @@ nav .brand-logo {
     background-color: #f6f6f6 !important;
     color: #444;
 }
+.sidenav-trigger{
+    color: #fff !important;
+    font-size: 30px;
+}
+nav .logo-container{
+    display: none;
+}
+nav .brand-logo{
+    position: relative;
+    width: 43px;
+    height: 43px;
+    margin:0;
+}

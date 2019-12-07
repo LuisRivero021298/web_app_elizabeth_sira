@@ -1,3 +1,6 @@
 .pagination-btn {
     cursor: pointer;
 }
+.active{
+	background-color: #8042A2 !important;
+}

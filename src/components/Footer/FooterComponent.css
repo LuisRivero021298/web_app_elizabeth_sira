@@ -15,8 +15,9 @@
     display:flex;
     justify-content: center;
     margin: auto;
+    font-family: 'Petit Formal Script', cursive !important;
     margin-top: 25px;
-    font-size: 3em;
+    font-size: 2em;
 }
 .footer .btn-up{
     grid-area:btn;

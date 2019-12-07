@@ -31,13 +31,16 @@
 .category .card-title {
     width: 100%;
     display: block;
-    padding: 15px !important;
+    padding-top: 5px !important;
     text-align: left;
     text-transform: uppercase;
-    border-top: .8px solid black;
-    font-size: 30px;
-    color: #000 !important;
-    font-weight: bold;
+    font-size: 25px;
+    color: #999 !important;
+    letter-spacing: 2px;
+    transition: color .4s ease;
+}
+.category:hover .card-title{
+    color: #444 !important;
 }
 .card{
     margin: 0;
@@ -51,5 +54,5 @@
     box-shadow: 0 0 0 #fff !important;
 }
 .card:hover {
-    box-shadow: 0 0 5px rgba(0,0,0,0.3) !important;   
+    box-shadow: 0 0 4px rgba(0,0,0,0.4) !important;   
 }

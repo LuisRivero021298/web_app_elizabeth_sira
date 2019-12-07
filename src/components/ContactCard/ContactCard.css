@@ -13,7 +13,7 @@
 
 
 .text-contact{
-    border: .2px solid #E1E1E1 !important;
+    border: .2px solid #888 !important;
     margin: 0 !important;
     height: 100%;
     border-radius: 2px;
@@ -40,7 +40,7 @@
     grid-area: msg;
     resize: none;
     margin-left: 15px;
-    border: 1px solid #E1E1E1 !important;
+    border: 1px solid #888 !important;
     height: 96.5%;
     border-radius: 2px;
 }
@@ -53,12 +53,15 @@
 #btn-contact{
     margin: auto;
     height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #BF9BD3;
-    border: .2px solid #BF9BD3;
     color: #eee;
     border-radius: 2px;
     cursor: pointer;
     width: 20%;
+    font-size: 20px;
     grid-area: btn;
     transition: all .3s ease-in;
 

@@ -7,9 +7,9 @@
 						<Preloader v-if="!category.image_category"></Preloader>
 						<div v-if="category.image_category" class="card-image">
 							<img :src="urlBase+'images/'+category.image_category">
-							<span  class="card-title">{{ category.name_category }}</span>
 						</div>
 					</div>
+					<span  class="card-title">{{ category.name_category }}</span>
 				</div>
 			</div>
 		</router-link>

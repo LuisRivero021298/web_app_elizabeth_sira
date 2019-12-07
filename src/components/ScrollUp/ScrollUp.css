@@ -1,15 +1,15 @@
 .scroll-up-btn{
-	width: 45px;
-	height: 45px;
-	border-radius: 50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: fixed;
-	right: 20px;
-	bottom: 20px;
-	background-color: #8042A2;
-	box-shadow: 0 0 10px rgba(0,0,0,0.25);
-	color: #fff;
-	cursor: pointer;
+	width: 45px !important;
+	height: 45px !important;
+	border-radius: 50% !important;
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+	position: fixed !important;
+	right: 20px !important;
+	bottom: 20px !important;
+	background-color: #8042A2 !important;
+	box-shadow: 0 0 10px rgba(0,0,0,0.25) !important;
+	color: #fff !important;
+	cursor: pointer !important;
 }
