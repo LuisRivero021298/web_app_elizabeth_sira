@@ -32,7 +32,6 @@ export default{
                 if(this.imageToParallax) {
                     setTimeout(()=> {this.loadImg = true}, 1000);
                 }
-                
             })  
 			.catch(error => console.log(error));
 		}

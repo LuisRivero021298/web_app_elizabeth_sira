@@ -157,7 +157,9 @@
   .title-principal a{
     margin: auto;
   }
-
+  .parallax-container .parallax img{
+    height: 700px !important;
+  }
   .container-categories, .container-about{
     margin: 0 !important;
     margin-top: 30px !important;
